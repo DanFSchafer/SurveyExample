@@ -7,7 +7,7 @@ $(document).ready(function() {
     var bandInput = $("input#band").val();
     var jobInput = $("input#job").val();
     var hairColor2Input = $("input:radio[name=hairColor2]:checked").val();
-    var animal = $("#animal").val();
+    var animalInput = $("#animal").val();
 
     $(".user").text(userInput);
     $(".food").text(foodInput);

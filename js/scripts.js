@@ -5,15 +5,16 @@ $(document).ready(function() {
     var foodInput = $("input#food").val();
     var animalInput = $("input#animal").val();
     var bandInput = $("input#band").val();
-    var hairColorInput = $("input#hairColor").val();
     var jobInput = $("input#job").val();
+    var hairColor2Input = $("input:radio[name=hairColor2]:checked").val();
+    var animal = $("#animal").val();
 
-    $(".user").append(userInput);
-    $(".food").append(foodInput);
-    $(".animal").append(animalInput);
-    $(".band").append(bandInput);
-    $(".hairColor").append(hairColorInput);
-    $(".job").append(jobInput);
+    $(".user").text(userInput);
+    $(".food").text(foodInput);
+    $(".animal").text(animalInput);
+    $(".band").text(bandInput);
+    $(".hairColor2").text(hairColor2Input);
+    $(".job").text(jobInput);
 
     $("#results").show();
     event.preventDefault();
